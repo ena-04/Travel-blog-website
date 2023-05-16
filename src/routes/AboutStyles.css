@@ -1,0 +1,14 @@
+.about {
+    padding: 30px 200px;
+    margin: 40px 0;
+}
+
+.abttitle {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        padding: 30px 100px;
+    }
+}

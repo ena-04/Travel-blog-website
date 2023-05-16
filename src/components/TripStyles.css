@@ -1,0 +1,87 @@
+/* Style your components */
+
+.tripimg {
+    height: 250px;
+    /* width: 320px; */
+    border-radius: 13px;
+    margin-bottom: 20px;
+}
+
+/* .tripimg :hover img{
+    transform: scale(1.3);
+} */
+.trip {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.tripcard {
+    width: 380px;
+    border-radius: 13px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    margin: 0 10px;
+    height: 350px;
+
+
+    background-color: transparent;
+    perspective: 1000px;
+    border: 1px solid #f1f1f1;
+}
+
+.triptitle {
+    margin-top: 40px;
+}
+
+.tripcard-inner {
+    /* display: inline; */
+    /* height: 80%; */
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.tripcard:hover .tripcard-inner {
+    transform: rotateY(180deg);
+}
+
+.tripcard-front {
+    /* background-color: #bbb; */
+    color: black;
+}
+
+.tripcard-back {
+    background-color: dodgerblue;
+    color: black;
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.tripcard-front,
+.tripcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@media screen and (max-width:850px) {
+    .trip {
+
+        margin: 4rem 2rem;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+
+}
